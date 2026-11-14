@@ -1,0 +1,22 @@
+{
+  "name": "word-fighters",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Word Fighters - falling-gem puzzle battle where matching English words to pictures powers your attacks (Japanese grade 3).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "e2e": "npm run build && playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4"
+  }
+}

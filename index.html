@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Word Fighters</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="stage">
+        <section id="left" class="panel">
+          <h1 class="title">Word <span>Fighters</span></h1>
+          <div class="card score"><span class="lbl">SCORE</span><b id="score">0</b></div>
+          <div class="card next"><span class="lbl">NEXT</span><canvas id="next"></canvas></div>
+          <div class="card power" id="powerCard">
+            <span class="lbl">えいご パワー</span>
+            <div id="power" class="stars"></div>
+          </div>
+          <div class="pad">
+            <button class="ctl" data-act="left" aria-label="LEFT"><span class="ico">◀</span><small>LEFT</small></button>
+            <button class="ctl" data-act="right" aria-label="RIGHT"><span class="ico">▶</span><small>RIGHT</small></button>
+          </div>
+        </section>
+
+        <section id="center">
+          <canvas id="board"></canvas>
+        </section>
+
+        <section id="right" class="panel">
+          <div class="tools">
+            <button id="muteBtn" class="tool" aria-label="sound">🔊</button>
+            <button id="devBtn" class="tool" aria-label="developer" hidden>⚙</button>
+          </div>
+          <div class="card monster-card">
+            <div class="hp">
+              <span class="lbl">HP</span>
+              <div class="bar"><i id="hpLag"></i><i id="hpFill"></i></div>
+              <b id="hpText">100</b>
+            </div>
+            <canvas id="monster"></canvas>
+            <div id="warn" hidden><span class="warn-gems" id="warnGems"></span><b id="warnTime">3</b></div>
+            <div id="tutorialCard" hidden></div>
+          </div>
+          <div class="pad">
+            <button class="ctl" data-act="rotate" aria-label="ROTATE"><span class="ico">⟳</span><small>ROTATE</small></button>
+            <button class="ctl" data-act="drop" aria-label="DROP"><span class="ico">▼</span><small>DROP</small></button>
+          </div>
+        </section>
+      </div>
+      <canvas id="fx"></canvas>
+      <div id="screen" hidden></div>
+      <div id="dev" hidden></div>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
