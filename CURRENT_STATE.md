@@ -2,7 +2,8 @@
 
 ## Status
 Playable vertical slice, complete as of 2026-11-09. All automated checks pass. Not yet played by a human or by children.
-GitHub: https://github.com/nolancasama/word-fighters (public). Live: https://nolancasama.github.io/word-fighters/
+GitHub: https://github.com/nolancasama/word-fighters (private as of 2026-11-14; Pages needs it public).
+Live page once public + Pages enabled: https://nolancasama.github.io/word-fighters/
 Every push to `main` builds and deploys via `.github/workflows/pages.yml` (GitHub Actions).
 
 ## What Exists
